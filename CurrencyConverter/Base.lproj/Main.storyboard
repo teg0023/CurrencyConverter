@@ -23,8 +23,8 @@
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="RMe-7l-R9A">
                                 <rect key="frame" x="10" y="69" width="373" height="739"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nla-Bh-N6I">
-                                        <rect key="frame" x="146.33333333333334" y="0.0" width="80.333333333333343" height="91"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nla-Bh-N6I">
+                                        <rect key="frame" x="186.66666666666666" y="0.0" width="0.0" height="91"/>
                                         <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="27"/>
                                         <color key="textColor" systemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -54,7 +54,7 @@
                                                 <color key="textColor" systemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IvR-fV-3N8">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IvR-fV-3N8">
                                                 <rect key="frame" x="112.66666666666669" y="30" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="euroConverter:" destination="BYZ-38-t0r" eventType="valueChanged" id="vdL-lG-0Dy"/>
@@ -71,7 +71,7 @@
                                                 <color key="textColor" systemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uv4-a4-FoM">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Uv4-a4-FoM">
                                                 <rect key="frame" x="311" y="30" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="ttdConverter:" destination="BYZ-38-t0r" eventType="valueChanged" id="RR9-eT-GcR"/>
@@ -88,7 +88,7 @@
                                                 <color key="textColor" systemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dlk-ue-RKe">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dlk-ue-RKe">
                                                 <rect key="frame" x="186" y="30" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="jpyConverter:" destination="BYZ-38-t0r" eventType="valueChanged" id="hEi-Al-IkY"/>
@@ -105,7 +105,7 @@
                                                 <color key="textColor" systemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F7v-5y-VrX">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="F7v-5y-VrX">
                                                 <rect key="frame" x="219.00000000000003" y="30" width="50.999999999999972" height="31"/>
                                                 <connections>
                                                     <action selector="egpConverter:" destination="BYZ-38-t0r" eventType="valueChanged" id="H7C-hP-A4E"/>
@@ -145,11 +145,85 @@
                     <connections>
                         <outlet property="message" destination="Nla-Bh-N6I" id="cIZ-RV-10Z"/>
                         <outlet property="usdText" destination="dAB-V9-Tnq" id="pxs-xU-Iod"/>
+                        <segue destination="4Bi-ET-QqS" kind="presentation" identifier="convertSegue" id="whj-jm-VD5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20.610687022900763" y="4.9295774647887329"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="a04-PH-Snn">
+            <objects>
+                <viewController id="4Bi-ET-QqS" customClass="NavigationViewController" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QjW-Kl-I4b">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gLF-Mi-QlV">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="a43-nh-1RW">
+                                <rect key="frame" x="20" y="20" width="353" height="802"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLu-41-nEw">
+                                        <rect key="frame" x="151.33333333333334" y="0.0" width="50.666666666666657" height="144.33333333333334"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j3-TQ-sDN">
+                                        <rect key="frame" x="151.33333333333334" y="164.33333333333331" width="50.666666666666657" height="144.33333333333331"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAR-fE-oUV">
+                                        <rect key="frame" x="151.33333333333334" y="328.66666666666669" width="50.666666666666657" height="144.66666666666669"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5a-hn-zcM">
+                                        <rect key="frame" x="151.33333333333334" y="493.33333333333331" width="50.666666666666657" height="144.33333333333331"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sli-gW-1f1">
+                                        <rect key="frame" x="151.33333333333334" y="657.66666666666663" width="50.666666666666657" height="144.33333333333337"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b9K-pS-bCa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gLF-Mi-QlV" firstAttribute="leading" secondItem="QjW-Kl-I4b" secondAttribute="leading" id="8PR-ym-ypP"/>
+                            <constraint firstItem="a43-nh-1RW" firstAttribute="top" secondItem="b9K-pS-bCa" secondAttribute="top" constant="20" id="HFG-Kf-eGq"/>
+                            <constraint firstItem="b9K-pS-bCa" firstAttribute="trailing" secondItem="a43-nh-1RW" secondAttribute="trailing" constant="20" id="K8P-aU-nBG"/>
+                            <constraint firstItem="b9K-pS-bCa" firstAttribute="bottom" secondItem="a43-nh-1RW" secondAttribute="bottom" constant="20" id="K8y-IG-a1T"/>
+                            <constraint firstAttribute="bottom" secondItem="gLF-Mi-QlV" secondAttribute="bottom" id="OgB-gM-23s"/>
+                            <constraint firstItem="gLF-Mi-QlV" firstAttribute="trailing" secondItem="QjW-Kl-I4b" secondAttribute="trailing" id="RRS-Zt-wHz"/>
+                            <constraint firstItem="gLF-Mi-QlV" firstAttribute="top" secondItem="QjW-Kl-I4b" secondAttribute="top" id="V8f-ly-Uxo"/>
+                            <constraint firstItem="a43-nh-1RW" firstAttribute="leading" secondItem="b9K-pS-bCa" secondAttribute="leading" constant="20" id="ka5-h1-sVw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="egpLabel" destination="Sli-gW-1f1" id="EmE-kF-opq"/>
+                        <outlet property="euroLabel" destination="7j3-TQ-sDN" id="4bV-wI-hjO"/>
+                        <outlet property="jpyLabel" destination="C5a-hn-zcM" id="6sH-al-TFx"/>
+                        <outlet property="ttdLabel" destination="GAR-fE-oUV" id="aWp-0y-Qfg"/>
+                        <outlet property="usdLabel" destination="TLu-41-nEw" id="ig1-2M-fjH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYx-91-Jqn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770.2290076335878" y="33.802816901408455"/>
         </scene>
     </scenes>
     <resources>

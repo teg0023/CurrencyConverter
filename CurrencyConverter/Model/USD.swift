@@ -26,7 +26,7 @@ struct USD
                 counter += 1
             }
         }
-        if (counter != usDollarsString.count)
+        if (counter != usDollarsString.count || usDollarsString == "")
         {
             return -1
         }
