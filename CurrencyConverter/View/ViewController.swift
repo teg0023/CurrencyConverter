@@ -23,7 +23,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        var char =
+        let char = "23"
+        for ch in char
+        {
+            let ascii = "\(String(describing: ch.asciiValue))"
+            message.text = ascii
+        }
     }
 
     
