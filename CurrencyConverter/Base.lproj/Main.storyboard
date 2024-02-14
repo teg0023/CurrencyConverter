@@ -168,31 +168,31 @@
                                 <rect key="frame" x="20" y="20" width="353" height="802"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLu-41-nEw">
-                                        <rect key="frame" x="151.33333333333334" y="0.0" width="50.666666666666657" height="144.33333333333334"/>
+                                        <rect key="frame" x="151" y="0.0" width="51" height="144.33333333333334"/>
                                         <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j3-TQ-sDN">
-                                        <rect key="frame" x="151.33333333333334" y="164.33333333333331" width="50.666666666666657" height="144.33333333333331"/>
+                                        <rect key="frame" x="151" y="164.33333333333331" width="51" height="144.33333333333331"/>
                                         <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAR-fE-oUV">
-                                        <rect key="frame" x="151.33333333333334" y="328.66666666666669" width="50.666666666666657" height="144.66666666666669"/>
+                                        <rect key="frame" x="151" y="328.66666666666669" width="51" height="144.66666666666669"/>
                                         <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5a-hn-zcM">
-                                        <rect key="frame" x="151.33333333333334" y="493.33333333333331" width="50.666666666666657" height="144.33333333333331"/>
+                                        <rect key="frame" x="151" y="493.33333333333331" width="51" height="144.33333333333331"/>
                                         <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sli-gW-1f1">
-                                        <rect key="frame" x="151.33333333333334" y="657.66666666666663" width="50.666666666666657" height="144.33333333333337"/>
+                                        <rect key="frame" x="151" y="657.66666666666663" width="51" height="144.33333333333337"/>
                                         <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
