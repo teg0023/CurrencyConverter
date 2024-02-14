@@ -84,7 +84,7 @@ class ViewController: UIViewController {
         dollar = usd.toInteger()
         if (dollar == -1)
         {
-            message.text = "Invalid! Enter only integer numbers."
+            message.text = "Invalid! Enter only a positive integer number."
         }
         else
         {
